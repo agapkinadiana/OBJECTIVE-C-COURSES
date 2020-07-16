@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cnN-Ux-akH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="313.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="MSf-Nl-T1j" customClass="BinaryLayout"/>
+                                <cells/>
+                            </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75L-pW-om3">
+                                <rect key="frame" x="10" y="417.5" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYd-8f-W3q">
+                                <rect key="frame" x="175.5" y="367.5" width="63" height="30"/>
+                                <state key="normal" title="clear Tee"/>
+                                <connections>
+                                    <action selector="clearButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9C9-NB-5Vk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUR-KF-jx6">
+                                <rect key="frame" x="360" y="367.5" width="44" height="30"/>
+                                <state key="normal" title="is BST"/>
+                                <connections>
+                                    <action selector="isBSTButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPe-ab-1Mk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dUR-KF-jx6" firstAttribute="centerY" secondItem="UYd-8f-W3q" secondAttribute="centerY" id="0xg-Ny-9WG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dUR-KF-jx6" secondAttribute="trailing" constant="10" id="4FM-yB-wgW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="75L-pW-om3" secondAttribute="trailing" constant="10" id="4Xm-1a-U8o"/>
+                            <constraint firstItem="cnN-Ux-akH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="HIy-BL-lks"/>
+                            <constraint firstItem="75L-pW-om3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="J25-WJ-6wm"/>
+                            <constraint firstItem="UYd-8f-W3q" firstAttribute="top" secondItem="cnN-Ux-akH" secondAttribute="bottom" constant="10" id="JhB-Vb-Kqq"/>
+                            <constraint firstItem="cnN-Ux-akH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NdD-7P-Feh"/>
+                            <constraint firstItem="75L-pW-om3" firstAttribute="top" secondItem="cnN-Ux-akH" secondAttribute="bottom" constant="60" id="Wzt-Z4-Wmw"/>
+                            <constraint firstItem="cnN-Ux-akH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="asE-jn-SvL"/>
+                            <constraint firstItem="UYd-8f-W3q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0I-DC-u5l"/>
+                            <constraint firstItem="cnN-Ux-akH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kUC-Jz-62z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="cnN-Ux-akH" id="5x3-hq-h6r"/>
+                        <outlet property="textField" destination="75L-pW-om3" id="7xF-pV-yT0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcN-Fq-viM">
+                                <rect key="frame" x="30" y="144" width="354" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your username" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="KzM-98-F5G">
+                                <rect key="frame" x="30" y="246" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JWr-8a-dPf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05Q-vb-hDp">
+                                <rect key="frame" x="30" y="346" width="354" height="416"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBd-Qh-IVw">
+                                <rect key="frame" x="30" y="812" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BQz-G0-rEw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CcN-Fq-viM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="84d-Ol-CIT"/>
+                            <constraint firstItem="KzM-98-F5G" firstAttribute="leading" secondItem="CcN-Fq-viM" secondAttribute="leading" id="K1S-CF-Ib6"/>
+                            <constraint firstItem="KzM-98-F5G" firstAttribute="top" secondItem="CcN-Fq-viM" secondAttribute="bottom" constant="50" id="NSH-Ff-kGZ"/>
+                            <constraint firstItem="05Q-vb-hDp" firstAttribute="trailing" secondItem="KzM-98-F5G" secondAttribute="trailing" id="PTt-QH-SZj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CcN-Fq-viM" secondAttribute="trailing" constant="30" id="Tlj-eK-1wt"/>
+                            <constraint firstItem="KzM-98-F5G" firstAttribute="top" secondItem="CcN-Fq-viM" secondAttribute="bottom" constant="50" id="VlB-UG-KUd"/>
+                            <constraint firstItem="bBd-Qh-IVw" firstAttribute="leading" secondItem="05Q-vb-hDp" secondAttribute="leading" id="WLF-e8-KxY"/>
+                            <constraint firstItem="KzM-98-F5G" firstAttribute="trailing" secondItem="CcN-Fq-viM" secondAttribute="trailing" id="azq-Yi-Xxf"/>
+                            <constraint firstItem="05Q-vb-hDp" firstAttribute="top" secondItem="KzM-98-F5G" secondAttribute="bottom" constant="50" id="bNV-dP-IAy"/>
+                            <constraint firstItem="bBd-Qh-IVw" firstAttribute="trailing" secondItem="05Q-vb-hDp" secondAttribute="trailing" id="bg5-Lf-Wx7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bBd-Qh-IVw" secondAttribute="bottom" id="bsq-uX-dPP"/>
+                            <constraint firstItem="bBd-Qh-IVw" firstAttribute="top" secondItem="05Q-vb-hDp" secondAttribute="bottom" constant="50" id="caU-B4-C9u"/>
+                            <constraint firstItem="05Q-vb-hDp" firstAttribute="leading" secondItem="KzM-98-F5G" secondAttribute="leading" id="gXX-w3-vZe"/>
+                            <constraint firstItem="CcN-Fq-viM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="s5J-nU-3kE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentTextView" destination="05Q-vb-hDp" id="3jh-N0-ODD"/>
+                        <outlet property="saveButton" destination="bBd-Qh-IVw" id="HWd-1I-9Z0"/>
+                        <outlet property="saveButtonBottomConstraint" destination="bsq-uX-dPP" id="CqD-VU-LAH"/>
+                        <outlet property="topConstraint" destination="84d-Ol-CIT" id="eD0-gy-oU3"/>
+                        <outlet property="usernameLabel" destination="CcN-Fq-viM" id="cWU-J8-miu"/>
+                        <outlet property="usernameTextField" destination="KzM-98-F5G" id="JWy-6l-wry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+</document>
